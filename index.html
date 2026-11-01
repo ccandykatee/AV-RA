@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AVÉRA — багатофункціональна косметика 2-в-1. Менше засобів, більше можливостей.">
+  <meta name="theme-color" content="#f8e9e8">
+  <title>AVÉRA — краса у твоєму ритмі</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">Твоя краса — без зайвих кроків <span>✦</span> Косметика 2-в-1 від AVÉRA</div>
+  <header class="site-header">
+    <a class="logo" href="#home" aria-label="AVÉRA — на головну">AVÉRA<span>®</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#home">Головна</a><a href="#catalog">Каталог</a><a href="#about">Про бренд</a><a href="#contact">Контакти</a>
+    </nav>
+    <button class="cart-button" id="openCart" aria-label="Відкрити кошик">Кошик <span id="cartCount">0</span></button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">МЕНШЕ ЗАСОБІВ. БІЛЬШЕ МОЖЛИВОСТЕЙ.</p>
+        <h1>Краса, що<br><em>підлаштовується</em><br>під тебе.</h1>
+        <p class="hero-text">Багатофункціональна косметика 2-в-1, яка легко вписується у твій день. Один продукт — декілька способів бути собою.</p>
+        <a class="button button-dark" href="#catalog">Обрати свій відтінок <span>↗</span></a>
+        <div class="hero-note"><span class="note-star">✳</span><span>Твій ритуал краси.<br><strong>Твої правила.</strong></span></div>
+      </div>
+      <div class="hero-art">
+        <div class="hero-image"></div>
+        <div class="floating-label label-top">EVERYDAY<br>ESSENTIALS</div>
+        <div class="floating-label label-bottom">2 в 1 <span>✦</span> AVÉRA</div>
+        <div class="hero-orbit"></div>
+      </div>
+      <div class="hero-index">01 / 04</div>
+    </section>
+
+    <section class="benefits" aria-label="Переваги AVÉRA">
+      <div><span>✳</span> ДВА СПОСОБИ ВИКОРИСТАННЯ</div>
+      <div><span>✳</span> ЗРУЧНО БРАТИ ІЗ СОБОЮ</div>
+      <div><span>✳</span> ТВОЯ КРАСА — ТВОЇ ПРАВИЛА</div>
+    </section>
+
+    <section class="catalog section-wrap" id="catalog">
+      <div class="section-heading">
+        <div><p class="eyebrow">ЗНАЙДИ СВОЄ</p><h2>Маленькі засоби.<br><em>Великі можливості.</em></h2></div>
+        <p>Улюблені відтінки для губ і щік — в одному компактному форматі. Обирай настрій, а не компроміс.</p>
+      </div>
+      <div class="filter-row">
+        <span>КОЛЕКЦІЯ AVÉRA</span>
+        <div class="filters" role="group" aria-label="Фільтр товарів">
+          <button class="filter active" data-filter="all">Усі продукти</button>
+          <button class="filter" data-filter="lips">Губи + щоки</button>
+          <button class="filter" data-filter="glow">Сяйво + колір</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="lips">
+          <div class="product-photo photo-rose"><span class="product-tag">БЕСТСЕЛЕР</span><img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=900&q=85" alt="Косметичний засіб у рожевому відтінку"></div>
+          <div class="product-info"><div><h3>Petal Kiss</h3><p>Помада + рум’яна · Rose</p></div><strong>₴ 590</strong></div>
+          <button class="add-button" data-id="petal">Додати до кошика <span>＋</span></button>
+        </article>
+        <article class="product-card" data-category="lips">
+          <div class="product-photo photo-nude"><img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=85" alt="Добірка декоративної косметики у нюдових відтінках"></div>
+          <div class="product-info"><div><h3>Soft Nude</h3><p>Помада + рум’яна · Nude</p></div><strong>₴ 590</strong></div>
+          <button class="add-button" data-id="nude">Додати до кошика <span>＋</span></button>
+        </article>
+        <article class="product-card" data-category="glow">
+          <div class="product-photo photo-peach"><span class="product-tag">НОВИНКА</span><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=900&q=85" alt="Косметика для створення ніжного макіяжу"></div>
+          <div class="product-info"><div><h3>Peach Bloom</h3><p>Тінт + кремові рум’яна · Peach</p></div><strong>₴ 620</strong></div>
+          <button class="add-button" data-id="peach">Додати до кошика <span>＋</span></button>
+        </article>
+        <article class="product-card" data-category="glow">
+          <div class="product-photo photo-glow"><img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?auto=format&fit=crop&w=900&q=85" alt="Засоби догляду та декоративної косметики"></div>
+          <div class="product-info"><div><h3>Golden Hour</h3><p>Хайлайтер + сяйво для повік · Glow</p></div><strong>₴ 640</strong></div>
+          <button class="add-button" data-id="gold">Додати до кошика <span>＋</span></button>
+        </article>
+      </div>
+      <p class="catalog-disclaimer">* Ціни та асортимент на сайті є демонстраційними й можуть бути змінені.</p>
+    </section>
+
+    <section class="manifesto" id="about">
+      <div class="manifesto-image"><img src="https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=1200&q=85" alt="Ніжна косметична композиція у природних відтінках"></div>
+      <div class="manifesto-copy">
+        <p class="eyebrow">ТРОХИ ПРО AVÉRA</p>
+        <h2>Твоя краса.<br><em>Без зайвих правил.</em></h2>
+        <p>AVÉRA — це ідея косметики, яка робить щоденний макіяж простішим і приємнішим. Ми поєднуємо два призначення в одному продукті, щоб улюблені відтінки завжди були поруч.</p>
+        <p>Для нас краса — не про складні правила чи ідеальність. Вона про свободу експериментувати, підкреслювати себе та обирати те, що підходить саме тобі.</p>
+        <a class="text-link" href="#contact">Познайомитися ближче <span>↗</span></a>
+      </div>
+    </section>
+
+    <section class="quote-section">
+      <span class="quote-mark">“</span>
+      <p>Не потрібно більше.<br><em>Потрібно саме твоє.</em></p>
+      <span class="quote-caption">AVÉRA — BEAUTY IN YOUR OWN WAY</span>
+    </section>
+
+    <section class="contact section-wrap" id="contact">
+      <div class="contact-intro"><p class="eyebrow">МИ НА ЗВ’ЯЗКУ</p><h2>Є питання?<br><em>Напиши нам.</em></h2><p>Маєш запитання про продукти чи хочеш поділитися враженнями? Ми будемо раді почути тебе.</p><a href="mailto:k.zubok@knute.edu.ua">k.zubok@knute.edu.ua</a></div>
+      <form class="contact-form" id="contactForm">
+        <label for="name">Твоє ім’я</label><input id="name" name="name" type="text" placeholder="Як до тебе звертатися?" required>
+        <label for="email">Електронна пошта</label><input id="email" name="email" type="email" placeholder="name@email.com" required>
+        <label for="message">Повідомлення</label><textarea id="message" name="message" rows="4" placeholder="Напиши нам кілька слів..." required></textarea>
+        <button class="button button-dark" type="submit">Надіслати повідомлення <span>↗</span></button>
+        <p class="form-hint" id="formHint">Форма відкриє поштову програму з підготовленим повідомленням.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main"><a class="logo footer-logo" href="#home">AVÉRA<span>®</span></a><p>Краса у твоєму ритмі.<br>Менше засобів — більше можливостей.</p><div class="footer-links"><a href="#catalog">Каталог</a><a href="#about">Про бренд</a><a href="#contact">Контакти</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Зубок Катерина. Усі права захищені.</span><a href="mailto:k.zubok@knute.edu.ua">k.zubok@knute.edu.ua</a><span>Сайт розроблено Зубок Катериною</span></div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true">
+    <div class="cart-backdrop" id="closeCartBackdrop"></div>
+    <aside class="cart-panel" role="dialog" aria-modal="true" aria-labelledby="cartTitle">
+      <div class="cart-header"><h2 id="cartTitle">Твій кошик <span id="cartCountPanel">0</span></h2><button id="closeCart" aria-label="Закрити кошик">×</button></div>
+      <div class="cart-items" id="cartItems"><p class="empty-cart">Тут поки порожньо — час знайти свій відтінок ✦</p></div>
+      <div class="cart-footer"><div class="cart-total"><span>Разом</span><strong id="cartTotal">₴ 0</strong></div><button class="button button-dark checkout-button" id="checkout">Перейти до оформлення <span>↗</span></button><p>Демонстраційний кошик. Реальне приймання та оплата замовлень не підключені.</p></div>
+    </aside>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
